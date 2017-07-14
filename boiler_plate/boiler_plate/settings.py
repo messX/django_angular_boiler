@@ -123,3 +123,6 @@ STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "boiler_ui/public"),
 ]
+
+BRUNCH_DIR = os.path.join(BASE_DIR, "boiler_ui"),
+BRUNCH_CMD = os.path.join(BASE_DIR, "boiler_ui /node_modules/brunch/bin/brunch"),
