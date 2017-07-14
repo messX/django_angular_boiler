@@ -118,12 +118,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+FILES_DIR = '/home/ubuntu/manu/boiler_proj'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "boiler_ui", "public"),
+    "{}/boiler_ui/public".format(FILES_DIR),
 ]
 
-BRUNCH_DIR = os.path.join(BASE_DIR, "boiler_ui"),
-BRUNCH_CMD = os.path.join(BASE_DIR, "boiler_ui", "node_modules", "brunch", "bin", "brunch")
+BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
+BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
