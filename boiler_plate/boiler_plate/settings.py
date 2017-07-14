@@ -25,8 +25,8 @@ SECRET_KEY = 'zud892cxfdz874*%c#77rrka8a&il5!ib7uj#id9b8%z_dgpa2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['52.27.181.81']
+FILES_DIR = '/home/ubuntu/manu/boiler_proj/boiler_plate'
 
 # Application definition
 
@@ -36,8 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'brunch',
     'django.contrib.staticfiles',
     'boiler_app',
+
+
 ]
 
 MIDDLEWARE = [
@@ -55,7 +58,7 @@ ROOT_URLCONF = 'boiler_plate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["{}/boiler_ui/public/".format(FILES_DIR)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "static_files/"
+STATICFILES_DIRS = [
+    "{}/boiler_ui/public/static".format(FILES_DIR),
+]
+print(STATICFILES_DIRS)
+BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
+BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)

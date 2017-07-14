@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from boiler_app import views as boiler_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', boiler_views.index)
+    
 ]
