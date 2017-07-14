@@ -126,6 +126,6 @@ STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
 ]
-
+print(STATICFILES_DIRS)
 BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
 BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
