@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'brunch',
+#    'brunch',
     'django.contrib.staticfiles',
     'boiler_app',
 
@@ -127,5 +127,5 @@ STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
 ]
 
-BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
-BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
+# BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
+# BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
