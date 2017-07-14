@@ -26,7 +26,7 @@ SECRET_KEY = 'zud892cxfdz874*%c#77rrka8a&il5!ib7uj#id9b8%z_dgpa2'
 DEBUG = True
 
 ALLOWED_HOSTS = ['52.27.181.81']
-
+FILES_DIR = '/home/ubuntu/manu/boiler_proj/boiler_plate'
 
 # Application definition
 
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'boiler_plate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["{}/boiler_ui/public/".format(FILES_DIR)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +119,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-FILES_DIR = '/home/ubuntu/manu/boiler_proj/boiler_plate'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
