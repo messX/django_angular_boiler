@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'boiler_app',
 
+
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/boiler_ui/public/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
