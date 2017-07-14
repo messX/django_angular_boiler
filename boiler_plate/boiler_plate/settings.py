@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "boiler_ui/public"),
+    os.path.join(BASE_DIR, "boiler_ui", "public"),
 ]
 
 BRUNCH_DIR = os.path.join(BASE_DIR, "boiler_ui"),
