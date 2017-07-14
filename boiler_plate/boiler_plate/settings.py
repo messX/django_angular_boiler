@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-#    'brunch',
+    'brunch',
     'django.contrib.staticfiles',
     'boiler_app',
 
@@ -119,7 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-FILES_DIR = '/home/ubuntu/manu/boiler_proj'
+FILES_DIR = '/home/ubuntu/manu/boiler_proj/boiler_plate'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
@@ -127,5 +127,5 @@ STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
 ]
 
-# BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
-# BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
+BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
+BRUNCH_CMD = "{}/boiler_ui/node_modules/brunch/bin/brunch".format(FILES_DIR)
