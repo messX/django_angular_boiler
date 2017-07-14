@@ -125,7 +125,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
-    os.path.join(BASE_DIR, "static_files")
 ]
 
 BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
