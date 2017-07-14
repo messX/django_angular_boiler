@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
-    "{}/boiler_ui/public".format(FILES_DIR),
+    "{}/boiler_ui/public/static".format(FILES_DIR),
 ]
 print(STATICFILES_DIRS)
 BRUNCH_DIR = "{}/boiler_ui".format(FILES_DIR)
