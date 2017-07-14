@@ -121,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/boiler_ui/public/'
+STATIC_URL = '/boiler_ui/public/static/'
 STATIC_ROOT = "static_files/"
 STATICFILES_DIRS = [
     "{}/boiler_ui/public".format(FILES_DIR),
