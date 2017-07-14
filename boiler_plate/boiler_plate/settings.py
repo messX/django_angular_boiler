@@ -36,9 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'brunch',
     'django.contrib.staticfiles',
     'boiler_app',
-    'brunch',
+
 ]
 
 MIDDLEWARE = [
