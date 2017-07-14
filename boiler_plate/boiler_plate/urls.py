@@ -19,6 +19,6 @@ from boiler_app import views as boiler_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^/', boiler_views.index)
+    url(r'^$', boiler_views.index)
     
 ]
