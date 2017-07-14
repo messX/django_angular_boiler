@@ -1,5 +1,6 @@
 git pull
 cd boiler_ui
+rm -rf public
 node_modules/brunch/bin/brunch build 
 cd ..
 python manage.py collectstatic
