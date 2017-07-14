@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'boiler_app',
+    'brunch',
 ]
 
 MIDDLEWARE = [
@@ -125,4 +126,4 @@ STATICFILES_DIRS = [
 ]
 
 BRUNCH_DIR = os.path.join(BASE_DIR, "boiler_ui"),
-BRUNCH_CMD = os.path.join(BASE_DIR, "boiler_ui /node_modules/brunch/bin/brunch"),
+BRUNCH_CMD = os.path.join(BASE_DIR, "boiler_ui", "node_modules", "brunch", "bin", "brunch")
